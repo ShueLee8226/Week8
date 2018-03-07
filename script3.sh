@@ -13,5 +13,5 @@ dmesg | grep sd
 sleep 2
 lsblk --fs
 echo "now let create a empty file"
-dd if=/dev/zero of=./New_File bs=1M count=1
+sudo dd if=/dev/zero of=./New_File bs=1M count=1
 hexdump New_File
