@@ -26,6 +26,8 @@ echo "Now let look at the manual page for grub install"
 man grub-mkconfig | head
 sleep 1
 echo "Now let install grub into a device"
-grub-install /dev/sda
+lsblk
+read device_choice
+grub-install /dev/${device_choice}
 
 
